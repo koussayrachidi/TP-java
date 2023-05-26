@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AllUsersController">
+   <children>
+  <TableView fx:id="table" layoutX="14.0" layoutY="154.0" prefHeight="349.0" prefWidth="874.0">
+                    <columns>
+                        <TableColumn fx:id="firstnameCol" prefWidth="165.0" text="First Name" />
+                        <TableColumn fx:id="lastnameCol" prefWidth="147.0" text="Last Name" />
+                        <TableColumn fx:id="transportationCol" prefWidth="147.0" text="Transportation" />
+                        <TableColumn fx:id="electricityCol" prefWidth="147.0" text="Electricity" />
+                        <TableColumn fx:id="foodCol" prefWidth="147.0" text="Food" />
+                        <TableColumn fx:id="resultCol" prefWidth="147.0" text="Result" />
+                    </columns>
+                </TableView>
+      <Text layoutX="348.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All users">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Text>
+      <HBox layoutY="484.0" prefHeight="18.0" prefWidth="862.0">
+                        <Button fx:id="removeBtn" mnemonicParsing="false" onAction="#remove" text="Remove">
+                            <HBox.margin>
+                                <Insets left="50.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="importBtn" mnemonicParsing="false" onAction="#importer" text="Import">
+                            <HBox.margin>
+                                <Insets left="50.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="exportBtn" mnemonicParsing="false" onAction="#exporter" text="Export">
+                            <HBox.margin>
+                                <Insets left="50.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="quitBtn" mnemonicParsing="false" onAction="#quitter" text="Quit">
+                            <HBox.margin>
+                                <Insets left="50.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="switch1" onAction="#switchToScene2" style="-fx-background-color: #4CAF50; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-font-size: 14px;" text="Go Back ">
+                            <HBox.margin>
+                                <Insets left="50.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        
+                        </HBox>
+   </children>
+</AnchorPane>
